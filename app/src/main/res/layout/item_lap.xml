@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/ic_lap"
+        app:tint="@color/purple_500" />
+
+
+    <TextView
+        android:id="@+id/item_lap_laptime"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:gravity="center|start"
+        android:paddingStart="24dp"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        tools:text="00:00.01"/>
+
+    <View
+        android:layout_width="1px"
+        android:layout_height="match_parent"
+        android:background="#A4A4A4"/>
+
+    <TextView
+        android:id="@+id/item_lap_timestamp"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:gravity="center|start"
+        android:paddingStart="32dp"
+        android:textStyle="bold"
+        android:textSize="12sp"
+        android:drawableLeft="@drawable/ic_calendar"
+        android:drawableTint="#695779"
+        android:drawablePadding="8dp"
+        tools:text="00:00.01 01.01.1990"/>
+
+</LinearLayout>
